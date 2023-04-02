@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Page</title>
+</head>
+<body>
+<p th:text="${user.id}"></p>
+<p th:text="${user.username}"></p>
+<p th:text="${user.password}"></p>
+<p th:text="${user.email}"></p>
+<p th:text="${user.roles}"></p>
+<a href="/admin/">Back</a>
+</body>
+</html>

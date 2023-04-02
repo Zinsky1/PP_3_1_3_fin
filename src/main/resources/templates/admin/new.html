@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New User Page</title>
+</head>
+<body>
+<table align="center">
+    <form align="center" th:method="POST" th:action="@{/admin/new}" th:object="${user}">
+        <tr>
+            <td align="right">
+                <label for="name">Username: </label>
+                <input type="text" th:field="*{username}" id="name"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="lastname">Password: </label>
+                <input type="password" th:field="*{password}" id="lastname"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="email">Email: </label>
+                <input type="email" th:field="*{email}" id="email"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input style="font-size: 30px" type="submit" value="Create!"/>
+            </td>
+        </tr>
+
+    </form>
+</table>
+<a href="/admin/">Back</a>
+</body>
+</html>
